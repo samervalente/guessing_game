@@ -10,20 +10,19 @@ fn main() {
     let mut guess = String::new();
 
     println!("Please input your user name!");
-
     io::stdin()
         .read_line(&mut username)
-        .expect("Failed to read user name read line");
+        .expect("Failed to read user name input");
 
     println!("Hello {username}. How old are you?");
     io::stdin()
         .read_line(&mut age)
-        .expect("Failed to read age input read line");
+        .expect("Failed to read age input");
 
     println!("Nice! Now input your guess. Good Luck!");
     io::stdin()
         .read_line(&mut guess)
-        .expect("Failed to read line");
+        .expect("Failed to read guess input");
 
     let guess: u32 = guess.trim().parse().expect("Please, type a number!");
 
